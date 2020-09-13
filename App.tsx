@@ -20,7 +20,7 @@ function App() {
   const colorScheme = useColorScheme();
 
   const getRandomImage = () => {
-    return "https://scontent.fkiv3-1.fna.fbcdn.net/v/t31.0-8/s960x960/22256588_1932617800312085_5686197942193420542_o.jpg?_nc_cat=110&_nc_sid=85a577&_nc_ohc=svjjE7DUkc0AX9yjcdC&_nc_ht=scontent.fkiv3-1.fna&tp=7&oh=1df4116c73c45a32ebad070704ca3333&oe=5F6ECD77";
+    return "https://pbs.twimg.com/profile_images/1284955198130130949/CgLZ3-RA_400x400.jpg";
   };
 
   const saveUserToDatabase = async (user) => {
@@ -48,7 +48,7 @@ function App() {
             id: userInfo.attributes.sub,
             username: userInfo.username,
             name: userInfo.username,
-            email: userInfo.attributes.email,
+            email: userInfo.email,
             image: getRandomImage(),
           };
           await saveUserToDatabase(user);

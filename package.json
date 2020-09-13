@@ -24,6 +24,7 @@
     "expo-asset": "~8.1.7",
     "expo-constants": "~9.1.1",
     "expo-font": "~8.2.1",
+    "expo-image-picker": "~8.3.0",
     "expo-linking": "^1.0.1",
     "expo-splash-screen": "~0.3.1",
     "expo-status-bar": "^1.0.2",
@@ -34,7 +35,8 @@
     "react-native": "https://github.com/expo/react-native/archive/sdk-38.0.2.tar.gz",
     "react-native-gesture-handler": "~1.6.0",
     "react-native-screens": "~2.9.0",
-    "react-native-web": "~0.11.7"
+    "react-native-web": "~0.11.7",
+    "uuid": "^8.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.6",

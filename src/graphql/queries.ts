@@ -10,7 +10,7 @@ export const getUser = /* GraphQL */ `
       name
       email
       image
-      Tweets {
+      tweets {
         items {
           id
           content
@@ -39,7 +39,7 @@ export const listUsers = /* GraphQL */ `
         name
         email
         image
-        Tweets {
+        tweets {
           nextToken
         }
         createdAt
@@ -62,11 +62,21 @@ export const getTweet = /* GraphQL */ `
         name
         email
         image
-        Tweets {
+        tweets {
           nextToken
         }
         createdAt
         updatedAt
+      }
+      likes {
+        items {
+          id
+          userID
+          tweetID
+          createdAt
+          updatedAt
+        }
+        nextToken
       }
       createdAt
       updatedAt
@@ -93,6 +103,16 @@ export const listTweets = /* GraphQL */ `
           image
           createdAt
           updatedAt
+        }
+        likes {
+          items {
+            id
+            userID
+            tweetID
+            createdAt
+            updatedAt
+          }
+          nextToken
         }
         createdAt
         updatedAt

@@ -24,5 +24,11 @@
         }
       }
     }
+  },
+  "storage": {
+    "twitterclone": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation"
+    }
   }
 }

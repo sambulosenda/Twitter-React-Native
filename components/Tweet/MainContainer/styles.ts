@@ -35,8 +35,10 @@ const styles = StyleSheet.create({
         
     }, 
     contents : {
-        marginTop: 5,
-        lineHeight: 18,
+        marginTop: 2,
+        fontSize: 16,
+        lineHeight: 20,
+        marginRight: 5,
         
     }, 
 
